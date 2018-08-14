@@ -13,8 +13,12 @@ namespace MinhaAPI.API
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
+           
+            //Force JSON responses on all requests
+
             //GlobalConfiguration.Configuration.Formatters.Clear();
             GlobalConfiguration.Configuration.Formatters.Add(GlobalConfiguration.Configuration.Formatters.JsonFormatter);
+
         }
     }
 }
